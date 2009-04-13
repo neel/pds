@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogClass</class>
+ <widget class="QDialog" name="DialogClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>156</width>
+    <height>35</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>&amp;Start</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>&amp;Report</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>released()</signal>
+   <receiver>DialogClass</receiver>
+   <slot>startSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>17</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>released()</signal>
+   <receiver>DialogClass</receiver>
+   <slot>reportSlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>146</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>16</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>startSlot()</slot>
+  <slot>reportSlot()</slot>
+ </slots>
+</ui>
